@@ -1,0 +1,7 @@
+{% load crispy_forms_tags %}  <!-- Chargez les balises de crispy_forms -->
+
+<form action="" method="post">
+    {% csrf_token %}
+    {{ mycontactform2|crispy }}  <!-- Utilisez le filtre crispy ici -->
+    <input type="submit" value="envoyer">
+</form>
